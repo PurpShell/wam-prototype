@@ -1,0 +1,139 @@
+{
+  "header": {
+    "wamVersion": 5,
+    "sequenceNumber": 37379,
+    "regular": true
+  },
+  "globals": {
+    "platform": 8,
+    "deviceName": "Mac OS",
+    "appVersion": "2.3000.1012024381",
+    "appIsBetaRelease": true,
+    "commitTime": 1710354095,
+    "browserVersion": "Chrome 122.0.0.0",
+    "webcEnv": 0,
+    "webcPhonePlatform": 2,
+    "browser": "Chrome",
+    "webcBucket": null,
+    "webcWebPlatform": 1,
+    "appBuild": 4,
+    "sequenceNumber": 57,
+    "webcTabId": "x790760686",
+    "deviceVersion": "10.15.7",
+    "ocVersion": 1,
+    "serviceImprovementOptOut": false,
+    "deviceClassification": 4
+  },
+  "events": [
+    {
+      "WebcAssetLoad": {
+        "props": {
+          "webcAssetName": "emojis",
+          "webcAssetFromCache": false,
+          "webcAssetCacheType": 0
+        }
+      }
+    },
+    {
+      "UserActivity": {
+        "props": {
+          "userActivitySessionId": "e2z7e",
+          "userActivityStartTime": 1710353985,
+          "userActivityBitmapLen": 64,
+          "userActivityBitmapLow": 1,
+          "userActivitySessionSeq": 0,
+          "userActivitySessionCum": 1
+        },
+        "commitTime": 1710354096,
+        "sequenceNumber": 58
+      }
+    },
+    {
+      "TsBitArray": {
+        "props": {
+          "tsSessionId": 330143311,
+          "bitarrayLength": 20,
+          "bitarrayLow": 393217,
+          "bitarrayHigh": 0,
+          "cumulativeBits": 3,
+          "relativeTimestampMs": 0
+        },
+        "commitTime": 1710354096,
+        "sequenceNumber": 59
+      }
+    },
+    {
+      "TsBitArray": {
+        "props": {
+          "tsSessionId": 330143311,
+          "bitarrayLength": 64,
+          "bitarrayLow": 1,
+          "bitarrayHigh": 0,
+          "cumulativeBits": 4,
+          "relativeTimestampMs": 57321
+        },
+        "commitTime": 1710354096,
+        "sequenceNumber": 60
+      }
+    },
+    {
+      "WebcStorageStat": {
+        "props": {
+          "webcStorageUsage": 7590383
+        },
+        "commitTime": 1710354096,
+        "sequenceNumber": 61
+      }
+    },
+    {
+      "WebcPageResume": {
+        "props": {},
+        "commitTime": 1710354096,
+        "sequenceNumber": 62
+      }
+    },
+    {
+      "OfflineResumeStage": {
+        "props": {
+          "offlineSessionId": "0FF50DFF1710354096",
+          "offlineResumeMode": 2,
+          "offlineStageTimestampMs": 0
+        },
+        "commitTime": 1710354096,
+        "sequenceNumber": 63
+      }
+    },
+    {
+      "OfflineResumeStage": {
+        "props": {
+          "offlineSessionId": "0FF50DFF1710354096",
+          "offlineResumeMode": 2,
+          "offlineStageTimestampMs": 500
+        },
+        "commitTime": 1710354097,
+        "sequenceNumber": 64
+      }
+    },
+    {
+      "OfflineResume": {
+        "props": {
+          "offlineMessageCount": 0,
+          "offlineReceiptCount": 0,
+          "offlineNotificationCount": 0,
+          "offlineDecryptErrorCount": 0,
+          "offlineSizeBytes": 0,
+          "chatThreadCount": 0,
+          "preackMessageCount": 0,
+          "preackReceiptCount": 0,
+          "isOfflineCompleteMissed": false,
+          "pageLoadT": 150495,
+          "isResumeInForeground": true,
+          "socketConnectT": 150495,
+          "lastStanzaT": 150996
+        },
+        "commitTime": 1710354097,
+        "sequenceNumber": 65
+      }
+    }
+  ]
+}

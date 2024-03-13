@@ -1,0 +1,839 @@
+[
+  {
+    "key": 11,
+    "value": 8,
+    "offset": 11,
+    "type": 3,
+    "flag": 48,
+    "position": 8,
+    "flagType": "global"
+  },
+  {
+    "key": 13,
+    "value": "Mac OS",
+    "offset": 20,
+    "type": 8,
+    "flag": 128,
+    "position": 11,
+    "flagType": "global"
+  },
+  {
+    "key": 17,
+    "value": "2.3000.1012024381",
+    "offset": 40,
+    "type": 8,
+    "flag": 128,
+    "position": 20,
+    "flagType": "global"
+  },
+  {
+    "key": 21,
+    "value": 1,
+    "offset": 42,
+    "type": 2,
+    "flag": 32,
+    "position": 40,
+    "flagType": "global"
+  },
+  {
+    "key": 47,
+    "value": 1710354095,
+    "offset": 48,
+    "type": 5,
+    "flag": 80,
+    "position": 42,
+    "flagType": "global"
+  },
+  {
+    "key": 295,
+    "value": "Chrome 122.0.0.0",
+    "offset": 68,
+    "type": 8,
+    "flag": 136,
+    "position": 48,
+    "flagType": "global"
+  },
+  {
+    "key": 633,
+    "value": 0,
+    "offset": 71,
+    "type": 1,
+    "flag": 24,
+    "position": 68,
+    "flagType": "global"
+  },
+  {
+    "key": 707,
+    "value": 2,
+    "offset": 75,
+    "type": 3,
+    "flag": 56,
+    "position": 71,
+    "flagType": "global"
+  },
+  {
+    "key": 779,
+    "value": "Chrome",
+    "offset": 85,
+    "type": 8,
+    "flag": 136,
+    "position": 75,
+    "flagType": "global"
+  },
+  {
+    "key": 875,
+    "value": null,
+    "offset": 88,
+    "type": 0,
+    "flag": 8,
+    "position": 85,
+    "flagType": "global"
+  },
+  {
+    "key": 899,
+    "value": 1,
+    "offset": 91,
+    "type": 2,
+    "flag": 40,
+    "position": 88,
+    "flagType": "global"
+  },
+  {
+    "key": 1657,
+    "value": 4,
+    "offset": 95,
+    "type": 3,
+    "flag": 56,
+    "position": 91,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 57,
+    "offset": 99,
+    "type": 3,
+    "flag": 56,
+    "position": 95,
+    "flagType": "global"
+  },
+  {
+    "key": 3727,
+    "value": "x790760686",
+    "offset": 113,
+    "type": 8,
+    "flag": 136,
+    "position": 99,
+    "flagType": "global"
+  },
+  {
+    "key": 4505,
+    "value": "10.15.7",
+    "offset": 124,
+    "type": 8,
+    "flag": 136,
+    "position": 113,
+    "flagType": "global"
+  },
+  {
+    "key": 6251,
+    "value": 1,
+    "offset": 127,
+    "type": 2,
+    "flag": 40,
+    "position": 124,
+    "flagType": "global"
+  },
+  {
+    "key": 13293,
+    "value": 0,
+    "offset": 130,
+    "type": 1,
+    "flag": 24,
+    "position": 127,
+    "flagType": "global"
+  },
+  {
+    "key": 14507,
+    "value": 4,
+    "offset": 134,
+    "type": 3,
+    "flag": 56,
+    "position": 130,
+    "flagType": "global"
+  },
+  {
+    "key": 1358,
+    "value": 255,
+    "offset": 138,
+    "type": 3,
+    "flag": 57,
+    "position": 134,
+    "flagType": "event"
+  },
+  {
+    "key": 1,
+    "value": "emojis",
+    "offset": 147,
+    "type": 8,
+    "flag": 130,
+    "position": 138,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": 0,
+    "offset": 149,
+    "type": 1,
+    "flag": 18,
+    "position": 147,
+    "flagType": "field"
+  },
+  {
+    "key": 4,
+    "value": 0,
+    "offset": 151,
+    "type": 1,
+    "flag": 18,
+    "position": 149,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 115027,
+    "offset": 157,
+    "type": 5,
+    "flag": 86,
+    "position": 151,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 163,
+    "type": 5,
+    "flag": 80,
+    "position": 157,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 58,
+    "offset": 167,
+    "type": 3,
+    "flag": 56,
+    "position": 163,
+    "flagType": "global"
+  },
+  {
+    "key": 1384,
+    "value": 255,
+    "offset": 171,
+    "type": 3,
+    "flag": 57,
+    "position": 167,
+    "flagType": "event"
+  },
+  {
+    "key": 1,
+    "value": "e2z7e",
+    "offset": 179,
+    "type": 8,
+    "flag": 130,
+    "position": 171,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": 1710353985,
+    "offset": 185,
+    "type": 5,
+    "flag": 82,
+    "position": 179,
+    "flagType": "field"
+  },
+  {
+    "key": 5,
+    "value": 64,
+    "offset": 188,
+    "type": 3,
+    "flag": 50,
+    "position": 185,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 1,
+    "offset": 190,
+    "type": 2,
+    "flag": 34,
+    "position": 188,
+    "flagType": "field"
+  },
+  {
+    "key": 6,
+    "value": 0,
+    "offset": 192,
+    "type": 1,
+    "flag": 18,
+    "position": 190,
+    "flagType": "field"
+  },
+  {
+    "key": 7,
+    "value": 1,
+    "offset": 194,
+    "type": 2,
+    "flag": 34,
+    "position": 192,
+    "flagType": "field"
+  },
+  {
+    "key": 4,
+    "value": 0,
+    "offset": 196,
+    "type": 1,
+    "flag": 22,
+    "position": 194,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 202,
+    "type": 5,
+    "flag": 80,
+    "position": 196,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 59,
+    "offset": 206,
+    "type": 3,
+    "flag": 56,
+    "position": 202,
+    "flagType": "global"
+  },
+  {
+    "key": 4332,
+    "value": 255,
+    "offset": 210,
+    "type": 3,
+    "flag": 57,
+    "position": 206,
+    "flagType": "event"
+  },
+  {
+    "key": 7,
+    "value": 330143311,
+    "offset": 216,
+    "type": 5,
+    "flag": 82,
+    "position": 210,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": 20,
+    "offset": 219,
+    "type": 3,
+    "flag": 50,
+    "position": 216,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 393217,
+    "offset": 225,
+    "type": 5,
+    "flag": 82,
+    "position": 219,
+    "flagType": "field"
+  },
+  {
+    "key": 1,
+    "value": 0,
+    "offset": 227,
+    "type": 1,
+    "flag": 18,
+    "position": 225,
+    "flagType": "field"
+  },
+  {
+    "key": 4,
+    "value": 3,
+    "offset": 230,
+    "type": 3,
+    "flag": 50,
+    "position": 227,
+    "flagType": "field"
+  },
+  {
+    "key": 5,
+    "value": 0,
+    "offset": 232,
+    "type": 1,
+    "flag": 18,
+    "position": 230,
+    "flagType": "field"
+  },
+  {
+    "key": 6,
+    "value": 0,
+    "offset": 234,
+    "type": 1,
+    "flag": 22,
+    "position": 232,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 240,
+    "type": 5,
+    "flag": 80,
+    "position": 234,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 60,
+    "offset": 244,
+    "type": 3,
+    "flag": 56,
+    "position": 240,
+    "flagType": "global"
+  },
+  {
+    "key": 4332,
+    "value": 255,
+    "offset": 248,
+    "type": 3,
+    "flag": 57,
+    "position": 244,
+    "flagType": "event"
+  },
+  {
+    "key": 7,
+    "value": 330143311,
+    "offset": 254,
+    "type": 5,
+    "flag": 82,
+    "position": 248,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": 64,
+    "offset": 257,
+    "type": 3,
+    "flag": 50,
+    "position": 254,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 1,
+    "offset": 259,
+    "type": 2,
+    "flag": 34,
+    "position": 257,
+    "flagType": "field"
+  },
+  {
+    "key": 1,
+    "value": 0,
+    "offset": 261,
+    "type": 1,
+    "flag": 18,
+    "position": 259,
+    "flagType": "field"
+  },
+  {
+    "key": 4,
+    "value": 4,
+    "offset": 264,
+    "type": 3,
+    "flag": 50,
+    "position": 261,
+    "flagType": "field"
+  },
+  {
+    "key": 5,
+    "value": 57321,
+    "offset": 270,
+    "type": 5,
+    "flag": 82,
+    "position": 264,
+    "flagType": "field"
+  },
+  {
+    "key": 6,
+    "value": 1,
+    "offset": 272,
+    "type": 2,
+    "flag": 38,
+    "position": 270,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 278,
+    "type": 5,
+    "flag": 80,
+    "position": 272,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 61,
+    "offset": 282,
+    "type": 3,
+    "flag": 56,
+    "position": 278,
+    "flagType": "global"
+  },
+  {
+    "key": 1504,
+    "value": 255,
+    "offset": 286,
+    "type": 3,
+    "flag": 57,
+    "position": 282,
+    "flagType": "event"
+  },
+  {
+    "key": 1,
+    "value": 7590383,
+    "offset": 292,
+    "type": 5,
+    "flag": 82,
+    "position": 286,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": -4.253529586511731e+37,
+    "offset": 302,
+    "type": 7,
+    "flag": 118,
+    "position": 292,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 308,
+    "type": 5,
+    "flag": 80,
+    "position": 302,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 62,
+    "offset": 312,
+    "type": 3,
+    "flag": 56,
+    "position": 308,
+    "flagType": "global"
+  },
+  {
+    "key": 884,
+    "value": 255,
+    "offset": 316,
+    "type": 3,
+    "flag": 57,
+    "position": 312,
+    "flagType": "event"
+  },
+  {
+    "key": 1,
+    "value": 1,
+    "offset": 318,
+    "type": 2,
+    "flag": 38,
+    "position": 316,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354096,
+    "offset": 324,
+    "type": 5,
+    "flag": 80,
+    "position": 318,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 63,
+    "offset": 328,
+    "type": 3,
+    "flag": 56,
+    "position": 324,
+    "flagType": "global"
+  },
+  {
+    "key": 3536,
+    "value": 255,
+    "offset": 332,
+    "type": 3,
+    "flag": 57,
+    "position": 328,
+    "flagType": "event"
+  },
+  {
+    "key": 2,
+    "value": "0FF50DFF1710354096",
+    "offset": 353,
+    "type": 8,
+    "flag": 130,
+    "position": 332,
+    "flagType": "field"
+  },
+  {
+    "key": 11,
+    "value": 2,
+    "offset": 356,
+    "type": 3,
+    "flag": 50,
+    "position": 353,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 0,
+    "offset": 358,
+    "type": 1,
+    "flag": 18,
+    "position": 356,
+    "flagType": "field"
+  },
+  {
+    "key": 1,
+    "value": 2,
+    "offset": 361,
+    "type": 3,
+    "flag": 54,
+    "position": 358,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354097,
+    "offset": 367,
+    "type": 5,
+    "flag": 80,
+    "position": 361,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 64,
+    "offset": 371,
+    "type": 3,
+    "flag": 56,
+    "position": 367,
+    "flagType": "global"
+  },
+  {
+    "key": 3536,
+    "value": 255,
+    "offset": 375,
+    "type": 3,
+    "flag": 57,
+    "position": 371,
+    "flagType": "event"
+  },
+  {
+    "key": 2,
+    "value": "0FF50DFF1710354096",
+    "offset": 396,
+    "type": 8,
+    "flag": 130,
+    "position": 375,
+    "flagType": "field"
+  },
+  {
+    "key": 11,
+    "value": 2,
+    "offset": 399,
+    "type": 3,
+    "flag": 50,
+    "position": 396,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 500,
+    "offset": 403,
+    "type": 4,
+    "flag": 66,
+    "position": 399,
+    "flagType": "field"
+  },
+  {
+    "key": 1,
+    "value": 3,
+    "offset": 406,
+    "type": 3,
+    "flag": 54,
+    "position": 403,
+    "flagType": "ext_field"
+  },
+  {
+    "key": 47,
+    "value": 1710354097,
+    "offset": 412,
+    "type": 5,
+    "flag": 80,
+    "position": 406,
+    "flagType": "global"
+  },
+  {
+    "key": 3433,
+    "value": 65,
+    "offset": 416,
+    "type": 3,
+    "flag": 56,
+    "position": 412,
+    "flagType": "global"
+  },
+  {
+    "key": 3112,
+    "value": 255,
+    "offset": 420,
+    "type": 3,
+    "flag": 57,
+    "position": 416,
+    "flagType": "event"
+  },
+  {
+    "key": 6,
+    "value": 0,
+    "offset": 422,
+    "type": 1,
+    "flag": 18,
+    "position": 420,
+    "flagType": "field"
+  },
+  {
+    "key": 9,
+    "value": 0,
+    "offset": 424,
+    "type": 1,
+    "flag": 18,
+    "position": 422,
+    "flagType": "field"
+  },
+  {
+    "key": 7,
+    "value": 0,
+    "offset": 426,
+    "type": 1,
+    "flag": 18,
+    "position": 424,
+    "flagType": "field"
+  },
+  {
+    "key": 5,
+    "value": 0,
+    "offset": 428,
+    "type": 1,
+    "flag": 18,
+    "position": 426,
+    "flagType": "field"
+  },
+  {
+    "key": 10,
+    "value": 0,
+    "offset": 430,
+    "type": 1,
+    "flag": 18,
+    "position": 428,
+    "flagType": "field"
+  },
+  {
+    "key": 1,
+    "value": 0,
+    "offset": 432,
+    "type": 1,
+    "flag": 18,
+    "position": 430,
+    "flagType": "field"
+  },
+  {
+    "key": 27,
+    "value": 0,
+    "offset": 434,
+    "type": 1,
+    "flag": 18,
+    "position": 432,
+    "flagType": "field"
+  },
+  {
+    "key": 29,
+    "value": 0,
+    "offset": 436,
+    "type": 1,
+    "flag": 18,
+    "position": 434,
+    "flagType": "field"
+  },
+  {
+    "key": 2,
+    "value": 0,
+    "offset": 438,
+    "type": 1,
+    "flag": 18,
+    "position": 436,
+    "flagType": "field"
+  },
+  {
+    "key": 11,
+    "value": 150495,
+    "offset": 444,
+    "type": 5,
+    "flag": 82,
+    "position": 438,
+    "flagType": "field"
+  },
+  {
+    "key": 13,
+    "value": 1,
+    "offset": 446,
+    "type": 2,
+    "flag": 34,
+    "position": 444,
+    "flagType": "field"
+  },
+  {
+    "key": 12,
+    "value": 150495,
+    "offset": 452,
+    "type": 5,
+    "flag": 82,
+    "position": 446,
+    "flagType": "field"
+  },
+  {
+    "key": 3,
+    "value": 150996,
+    "offset": 458,
+    "type": 5,
+    "flag": 82,
+    "position": 452,
+    "flagType": "field"
+  },
+  {
+    "key": 14,
+    "value": 0,
+    "offset": 460,
+    "type": 1,
+    "flag": 22,
+    "position": 458,
+    "flagType": "ext_field"
+  }
+]
