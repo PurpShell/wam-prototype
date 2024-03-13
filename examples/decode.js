@@ -3,10 +3,10 @@
 check encoded_sample.payload in consts
  */
 
-import { decodeData, WAM_EVENTS, WAM_GLOBALS } from "../wam/index.js";
+import { decodeData, WAM_EVENTS, WAM_GLOBALS } from "../dist/wam/index.js";
 import { readFileSync, writeFileSync } from "fs";
 
-const test = true
+const test = false
 const buf = readFileSync(test ? "./test.payload" : "./consts/bigger_sample.payload")
 const { header, data } = decodeData(buf);
 
