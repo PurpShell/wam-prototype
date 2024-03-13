@@ -1,4 +1,12 @@
-import { FLAG_BYTE, FLAG_EVENT, FLAG_EXTENDED, FLAG_FIELD, FLAG_GLOBAL, WAM_EVENTS, WAM_GLOBALS } from "./utils.js";
+import {
+	FLAG_BYTE,
+	FLAG_EVENT,
+	FLAG_EXTENDED,
+	FLAG_FIELD,
+	FLAG_GLOBAL,
+	WAM_EVENTS,
+	WAM_GLOBALS,
+} from "./utils.js";
 
 export function deserializeBufferHeader(buffer: Buffer) {
 	if (buffer.subarray(0, 3).toString("utf8") !== "WAM") throw "Invalid payload";
@@ -74,19 +82,23 @@ function deserializeData(buffer: Buffer, position: number) {
 			value = type - 1;
 			break;
 		case 3:
-			value = buffer.readUInt8(offset);
+			value = buffer.readInt8(offset);
 			offset += 1;
 			break;
 		case 4:
-			value = buffer.readUInt16LE(offset);
+			value = buffer.readInt16LE(offset);
 			offset += 2;
 			break;
 		case 5:
-			value = buffer.readUInt32LE(offset);
+			value = buffer.readInt32LE(offset);
 			offset += 4;
 			break;
+		case 6:
+			value = buffer.readBigInt64LE(offset);
+			offset += 8;
+			break;
 		case 7:
-			value = buffer.readFloatLE(offset);
+			value = buffer.readDoubleLE(offset);
 			offset += 8;
 			break;
 		case 8:

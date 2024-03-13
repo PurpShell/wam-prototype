@@ -47,7 +47,8 @@
           "webcWindowSelenium": false,
           "webcWindowCallphantom": false,
           "webcWindowCallselenium": false,
-          "webcWindowSeleniumIdeRecorder": false
+          "webcWindowSeleniumIdeRecorder": false,
+          "webcWindowNavigatorWebdriver": 0
         }
       }
     },
@@ -55,7 +56,8 @@
       "WebcDbOpen": {
         "props": {
           "webcDbName": "wawc",
-          "webcDbOpenWasSuccess": true
+          "webcDbOpenWasSuccess": true,
+          "webcDbOpenNumAttempts": 0
         },
         "commitTime": 1710354207,
         "sequenceNumber": 1
@@ -64,7 +66,8 @@
     {
       "WebDbVersionsSource": {
         "props": {
-          "webDbVersionSource": 1
+          "webDbVersionSource": 1,
+          "webSchemaInitiator": 1
         },
         "commitTime": 1710354207,
         "sequenceNumber": 2
@@ -75,7 +78,8 @@
         "props": {
           "webcAssetName": "initial-assets",
           "webcAssetFromCache": false,
-          "webcAssetCacheType": 0
+          "webcAssetCacheType": 0,
+          "webcAssetLoadT": 4968
         },
         "commitTime": 1710354213,
         "sequenceNumber": 3
@@ -84,7 +88,8 @@
     {
       "WebcStorageStat": {
         "props": {
-          "webcStorageUsage": 7799758
+          "webcStorageUsage": 7799758,
+          "webcStorageQuota": 596797550592
         },
         "commitTime": 1710354213,
         "sequenceNumber": 4
@@ -95,7 +100,8 @@
         "props": {
           "offlineSessionId": "005E4AD81710354207",
           "offlineResumeMode": 1,
-          "offlineStageTimestampMs": 15985
+          "offlineStageTimestampMs": 15985,
+          "currentOfflineStage": 2
         },
         "commitTime": 1710354223,
         "sequenceNumber": 5
@@ -107,7 +113,8 @@
           "offlineSessionId": "005E4AD81710354207",
           "offlineResumeMode": 1,
           "offlineStageTimestampMs": 17188,
-          "currentOfflineStage": 3
+          "currentOfflineStage": 3,
+          "offlineDecryptErrorCount": 0
         },
         "commitTime": 1710354224,
         "sequenceNumber": 6
@@ -120,7 +127,8 @@
           "offlineResumeMode": 1,
           "offlineStageTimestampMs": 17300,
           "currentOfflineStage": 4,
-          "offlineDecryptErrorCount": 0
+          "offlineDecryptErrorCount": 0,
+          "chatThreadCount": 20
         },
         "commitTime": 1710354225,
         "sequenceNumber": 7
@@ -128,7 +136,9 @@
     },
     {
       "WebcStreamModeChange": {
-        "props": {},
+        "props": {
+          "webcStreamMode": 1
+        },
         "commitTime": 1710354225,
         "sequenceNumber": 8
       }
@@ -141,7 +151,8 @@
           "webcStatusRecentRowCount": 0,
           "webcStatusViewedItemCount": 0,
           "webcStatusViewedRowCount": 0,
-          "webcStatusMutedItemCount": 0
+          "webcStatusMutedItemCount": 0,
+          "webcStatusMutedRowCount": 0
         },
         "commitTime": 1710354225,
         "sequenceNumber": 9
@@ -163,7 +174,8 @@
           "isResumeInForeground": true,
           "socketConnectT": 38685,
           "lastStanzaT": 39888,
-          "mainScreenLoadT": 40000
+          "mainScreenLoadT": 40000,
+          "mailboxAge": 0
         },
         "commitTime": 1710354225,
         "sequenceNumber": 10
@@ -174,7 +186,8 @@
         "props": {
           "tsSessionId": 330143311,
           "relativeTimestampMs": 256929,
-          "navigationSource": 6
+          "navigationSource": 6,
+          "navigationDestination": 8
         },
         "commitTime": 1710354225,
         "sequenceNumber": 11
@@ -187,7 +200,8 @@
           "userActivityStartTime": 1710354168,
           "userActivityBitmapLen": 18,
           "userActivityBitmapLow": 98371,
-          "userActivitySessionSeq": 1
+          "userActivitySessionSeq": 1,
+          "userActivitySessionCum": 6
         },
         "commitTime": 1710354225,
         "sequenceNumber": 12
@@ -201,7 +215,8 @@
           "bitarrayLow": 98371,
           "bitarrayHigh": 0,
           "cumulativeBits": 9,
-          "relativeTimestampMs": 240927
+          "relativeTimestampMs": 240927,
+          "sessionSeq": 2
         },
         "commitTime": 1710354225,
         "sequenceNumber": 13
@@ -247,7 +262,8 @@
           "webcWsNormal": 40001,
           "webcWsAttempts": 2,
           "webcQrCode": false,
-          "webcInitialPanelMountT": 40013
+          "webcInitialPanelMountT": 40013,
+          "webcLoadInForeground": true
         },
         "commitTime": 1710354225,
         "sequenceNumber": 14
@@ -257,7 +273,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yl/l/0,cross/6bJBZiQWFyb27Zd4v4x-HvK6Sjj5ZPWYb.css?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 2065
+          "webcResourceDuration": 2065,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 15
@@ -267,7 +284,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yF/r/p55HfXW__mM.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 367
+          "webcResourceDuration": 367,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 16
@@ -277,7 +295,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yF/r/ofors-Cj5Iq.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 3095
+          "webcResourceDuration": 3095,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 17
@@ -287,7 +306,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/y0/r/Kb46IyaJzvM.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4236
+          "webcResourceDuration": 4236,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 18
@@ -297,7 +317,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iA8H4/yU/l/makehaste_jhash/iCyna0MjBGV1PG-UH0c9EQe8t77NgTRCdDQjJxOHorPJvsWqehdEtWwDQVEH-g-FDC.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 5203
+          "webcResourceDuration": 5203,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 19
@@ -307,7 +328,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc-translations.php/v6iA8H4/yX/l/en_US/iCyna0MjBGV1PG-UH0c9EQe8t77NgTRCdDQjJxOHorPJvsWqehdEtWwDQVEH-g-FDC.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 15512
+          "webcResourceDuration": 15512,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 20
@@ -317,7 +339,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3ixps4/yy/l/makehaste_jhash/3knlkRAUUjB.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 8938
+          "webcResourceDuration": 8938,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 21
@@ -327,7 +350,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc-translations.php/v6ixps4/yK/l/en_US/3knlkRAUUjB.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 15511
+          "webcResourceDuration": 15511,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 22
@@ -337,7 +361,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yJ/r/4rXSFi-Uvrx.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 7325
+          "webcResourceDuration": 7325,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 23
@@ -347,7 +372,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iFS24/yH/l/makehaste_jhash/4r9ZlMlq7oc.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 9353
+          "webcResourceDuration": 9353,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 24
@@ -357,7 +383,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc-translations.php/v6iFS24/y_/l/en_US/4r9ZlMlq7oc.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 15511
+          "webcResourceDuration": 15511,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 25
@@ -367,7 +394,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iRdg4/yy/l/makehaste_jhash/6zMmpNTnFLP.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 16319
+          "webcResourceDuration": 16319,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 26
@@ -377,7 +405,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc-translations.php/v6iRdg4/yc/l/en_US/6zMmpNTnFLP.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 15551
+          "webcResourceDuration": 15551,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 27
@@ -387,7 +416,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yX/r/7e4NMmX2B0m.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 9996
+          "webcResourceDuration": 9996,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 28
@@ -397,7 +427,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/killswitch/",
-          "webcResourceDuration": 423
+          "webcResourceDuration": 423,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 29
@@ -407,7 +438,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yy/r/0VfZP3-iu6n.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 868
+          "webcResourceDuration": 868,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 30
@@ -417,7 +449,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iSD94/yt/l/makehaste_jhash/2sP-frPXq89.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 1111
+          "webcResourceDuration": 1111,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 31
@@ -427,7 +460,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yM/r/FPlNguXyB9e.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 3296
+          "webcResourceDuration": 3296,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 32
@@ -437,7 +471,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iIBc4/y4/l/makehaste_jhash/6uui5V1kaiY.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 7441
+          "webcResourceDuration": 7441,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 33
@@ -447,7 +482,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3ilnH4/yR/l/makehaste_jhash/FJZrwxftZu2.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 6338
+          "webcResourceDuration": 6338,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 34
@@ -457,7 +493,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iHB74/yn/l/makehaste_jhash/Z1vlR7DvTJH.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 1264
+          "webcResourceDuration": 1264,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 35
@@ -467,7 +504,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iO3O4/yd/l/makehaste_jhash/_Dw5boRsUHe.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 5679
+          "webcResourceDuration": 5679,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 36
@@ -477,7 +515,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yV/l/0,cross/EiM1WhKyVV7.css?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 859
+          "webcResourceDuration": 859,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 37
@@ -487,7 +526,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yU/r/DdQbUpSH52U.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4500
+          "webcResourceDuration": 4500,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 38
@@ -497,7 +537,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3io034/yu/l/makehaste_jhash/0wrWn7oiQ97.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4527
+          "webcResourceDuration": 4527,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 39
@@ -507,7 +548,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yT/r/BCEPMVgrDGc.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4585
+          "webcResourceDuration": 4585,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 40
@@ -517,7 +559,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3i68a4/yV/l/makehaste_jhash/EuL0DEbh7UM.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4648
+          "webcResourceDuration": 4648,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 41
@@ -527,7 +570,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iPS44/yy/l/makehaste_jhash/tXtB7MzF0bL.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 6372
+          "webcResourceDuration": 6372,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 42
@@ -537,7 +581,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yu/l/0,cross/nDbTkqlvGPP.css?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 863
+          "webcResourceDuration": 863,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 43
@@ -547,7 +592,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yJ/r/ztUgagupDlO.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 5005
+          "webcResourceDuration": 5005,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 44
@@ -557,7 +603,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3/yP/r/rYZqPCBaG70.png",
-          "webcResourceDuration": 295
+          "webcResourceDuration": 295,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 45
@@ -567,7 +614,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/static_resources/webworker_v1/init_script/?__hs=19795.HYP%3Awhatsapp_comet_pkg.2.1..0.1&__spin_r=1012024381&__spin_b=trunk&__spin_t=1710354191",
-          "webcResourceDuration": 266
+          "webcResourceDuration": 266,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 46
@@ -577,7 +625,8 @@
       "WebcResourceLoad": {
         "props": {
           "webcResourceName": "/rsrc.php/v3iTvy4/yI/l/makehaste_jhash/x68ZDZLJQK2.js?_nc_x=Ij3Wp8lg5Kz",
-          "webcResourceDuration": 4039
+          "webcResourceDuration": 4039,
+          "webcResourceCached": false
         },
         "commitTime": 1710354225,
         "sequenceNumber": 47
@@ -588,7 +637,8 @@
         "props": {
           "tsSessionId": 330143311,
           "relativeTimestampMs": 297365,
-          "navigationSource": 8
+          "navigationSource": 8,
+          "navigationDestination": 6
         },
         "commitTime": 1710354225,
         "sequenceNumber": 48
@@ -599,7 +649,8 @@
         "props": {
           "tsSessionId": 330143311,
           "relativeTimestampMs": 305332,
-          "navigationSource": 6
+          "navigationSource": 6,
+          "navigationDestination": 8
         },
         "commitTime": 1710354233,
         "sequenceNumber": 49

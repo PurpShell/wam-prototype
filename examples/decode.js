@@ -25,10 +25,10 @@ for (const { key, value, flagType } of data) {
                 globals[field.name] = fieldValue
             }
         }
-    } else if (flagType == "event") {
+    } else if (flagType == "event" || flagType == "ext_event") {
         const event = WAM_EVENTS.find(a => a.id === key);
         events.push({ name: event.name, props: [], weight: -value, id: event.id })
-    } else if (flagType == "field") {
+    } else if (flagType == "field" || flagType == "ext_field") {
         const lastEvent = events[events.length - 1];
         const event = WAM_EVENTS.find(a => a.id === lastEvent.id);
         const [name, [id, fieldType]] = Object.entries(event.props).find(([ki, val]) => val[0] === key) || [];

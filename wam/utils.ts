@@ -32,9 +32,7 @@ export type EventType = {
 		sequenceNumber: number;
 		props: {
 			// @ts-ignore
-			[k in keyof EventByName<key>["props"]]: TypeOfString<
-				EventByName<key>["props"][k][1]
-			>;
+			[k in keyof EventByName<key>["props"]]: any;
 		};
 	};
 } & {};

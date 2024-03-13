@@ -1,5 +1,15 @@
 import { BinaryInfo } from "./BinaryInfo.js";
-import { EventType, Event, FLAG_BYTE, FLAG_EVENT, FLAG_EXTENDED, FLAG_FIELD, FLAG_GLOBAL, WAM_EVENTS, WAM_GLOBALS } from "./utils.js";
+import {
+	EventType,
+	Event,
+	FLAG_BYTE,
+	FLAG_EVENT,
+	FLAG_EXTENDED,
+	FLAG_FIELD,
+	FLAG_GLOBAL,
+	WAM_EVENTS,
+	WAM_GLOBALS,
+} from "./utils.js";
 
 const getHeaderBitLength = (key: number) => (key < 256 ? 2 : 3);
 
@@ -15,7 +25,9 @@ export const encodeWAM = (binaryInfo: BinaryInfo) => {
 	encodeEvents(binaryInfo);
 
 	console.log(binaryInfo.buffer);
-	const totalSize = binaryInfo.buffer.map((a) => a.length).reduce((a, b) => a + b);
+	const totalSize = binaryInfo.buffer
+		.map((a) => a.length)
+		.reduce((a, b) => a + b);
 	const buffer = Buffer.alloc(totalSize);
 	let offset = 0;
 	binaryInfo.buffer.forEach((buffer_) => {
@@ -46,7 +58,10 @@ function encodeWAMHeader(binaryInfo: BinaryInfo) {
  * @param {BinaryInfo} binaryInfo
  */
 function encodeGlobalAttributes(binaryInfo: BinaryInfo) {
-	for (let [key, value] of Object.entries(binaryInfo.globalAttributes) as [keyof typeof WAM_GLOBALS, any][]) {
+	for (let [key, value] of Object.entries(binaryInfo.globalAttributes) as [
+		keyof typeof WAM_GLOBALS,
+		any
+	][]) {
 		console.log(key, value);
 		const id = WAM_GLOBALS[key].id;
 		if (typeof value === "boolean") value = value ? 1 : 0;
@@ -59,9 +74,22 @@ function encodeGlobalAttributes(binaryInfo: BinaryInfo) {
  * @param {BinaryInfo} binaryInfo
  */
 function encodeEvents(binaryInfo: BinaryInfo) {
-	for (const [name, { props, commitTime, sequenceNumber }] of binaryInfo.events.map((a) => Object.entries(a)[0])) {
-		commitTime && binaryInfo.buffer.push(serializeData(WAM_GLOBALS["commitTime"].id, commitTime, FLAG_GLOBAL));
-		sequenceNumber && binaryInfo.buffer.push(serializeData(WAM_GLOBALS["sequenceNumber"].id, sequenceNumber, FLAG_GLOBAL));
+	for (const [
+		name,
+		{ props, commitTime, sequenceNumber },
+	] of binaryInfo.events.map((a) => Object.entries(a)[0])) {
+		commitTime &&
+			binaryInfo.buffer.push(
+				serializeData(WAM_GLOBALS["commitTime"].id, commitTime, FLAG_GLOBAL)
+			);
+		sequenceNumber &&
+			binaryInfo.buffer.push(
+				serializeData(
+					WAM_GLOBALS["sequenceNumber"].id,
+					sequenceNumber,
+					FLAG_GLOBAL
+				)
+			);
 		const event = WAM_EVENTS.find((a) => a.name == name)!;
 
 		const props_ = Object.entries(props);
@@ -126,10 +154,15 @@ function serializeData(key: number, value: Value, flag: number): Buffer {
 			offset = serializeHeader(buffer, offset, key, flag | (4 << 4));
 			buffer.writeInt16LE(value, offset);
 			return buffer;
-		} else {
+		} else if (-2147483648 <= value && value < 2147483648) {
 			buffer = Buffer.alloc(bufferLength + 4);
 			offset = serializeHeader(buffer, offset, key, flag | (5 << 4));
 			buffer.writeInt32LE(value, offset);
+			return buffer;
+		} else {
+			buffer = Buffer.alloc(bufferLength + 8);
+			offset = serializeHeader(buffer, offset, key, flag | (6 << 4));
+			buffer.writeBigInt64LE(BigInt(value), offset);
 			return buffer;
 		}
 	} else if (typeof value === "number") {
@@ -169,7 +202,12 @@ function serializeData(key: number, value: Value, flag: number): Buffer {
  * @param {*} key
  * @param {*} flag
  */
-function serializeHeader(buffer: Buffer, offset: number, key: number, flag: number) {
+function serializeHeader(
+	buffer: Buffer,
+	offset: number,
+	key: number,
+	flag: number
+) {
 	if (key < 256) {
 		buffer.writeUInt8(flag, offset);
 		offset += 1;
