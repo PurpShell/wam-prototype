@@ -1,0 +1,447 @@
+{
+	"abKey2": {
+		"name": "abKey2",
+		"id": 4473,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"appBuild": {
+		"name": "appBuild",
+		"id": 1657,
+		"type": {
+			"DEBUG": 1,
+			"ALPHA": 2,
+			"BETA": 3,
+			"RELEASE": 4
+		},
+		"channels": ["regular", "private"]
+	},
+	"appIsBetaRelease": {
+		"name": "appIsBetaRelease",
+		"id": 21,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular", "private"]
+	},
+	"appVersion": {
+		"name": "appVersion",
+		"id": 17,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular", "private"]
+	},
+	"browser": {
+		"name": "browser",
+		"id": 779,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"browserVersion": {
+		"name": "browserVersion",
+		"id": 295,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"datacenter": {
+		"name": "datacenter",
+		"id": 2795,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"deviceClassification": {
+		"name": "deviceClassification",
+		"id": 14507,
+		"type": {
+			"MOBILE": 0,
+			"TABLET": 1,
+			"WEARABLES": 2,
+			"VR": 3,
+			"DESKTOP": 4,
+			"FOLDABLE": 5,
+			"AR_GLASS": 6,
+			"UNDEFINED": 100
+		},
+		"channels": ["regular"]
+	},
+	"deviceName": {
+		"name": "deviceName",
+		"id": 13,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular", "private"]
+	},
+	"deviceVersion": {
+		"name": "deviceVersion",
+		"id": 4505,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"expoKey": {
+		"name": "expoKey",
+		"id": 5029,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular", "private"]
+	},
+	"mcc": {
+		"name": "mcc",
+		"id": 5,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"memClass": {
+		"name": "memClass",
+		"id": 655,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"mnc": {
+		"name": "mnc",
+		"id": 3,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"networkIsWifi": {
+		"name": "networkIsWifi",
+		"id": 23,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular"]
+	},
+	"ocVersion": {
+		"name": "ocVersion",
+		"id": 6251,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"osVersion": {
+		"name": "osVersion",
+		"id": 15,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular", "private"]
+	},
+	"platform": {
+		"name": "platform",
+		"id": 11,
+		"type": {
+			"IPHONE": 1,
+			"ANDROID": 2,
+			"BB": 3,
+			"BBX": 7,
+			"S40": 4,
+			"SYMBIAN": 5,
+			"WP": 6,
+			"WEBCLIENT": 8,
+			"OSMETA": 11,
+			"ENT": 12,
+			"SMBA": 13,
+			"KAIOS": 14,
+			"SMBI": 15,
+			"WINDOWS": 16,
+			"WEB": 17,
+			"PORTAL": 18,
+			"BLOKS": 19,
+			"BLUEA": 20,
+			"BLUEI": 21,
+			"FBLITEA": 22,
+			"GREENA": 23,
+			"GREENI": 24,
+			"IGDA": 25,
+			"IGDI": 26,
+			"IGLITEA": 27,
+			"MLITEA": 28,
+			"MSGRA": 29,
+			"MSGRI": 30,
+			"MSGRP": 31,
+			"MSGRW": 32,
+			"IGDW": 33,
+			"PAGE": 34,
+			"MSGRDM": 35,
+			"MSGRDW": 36,
+			"MSGROM": 37,
+			"MSGROC": 38,
+			"MSGRM": 43,
+			"IGDM": 44,
+			"WEARM": 45,
+			"CAPI": 46,
+			"XR": 47,
+			"MACOS": 48,
+			"WAMETA_REPL": 49,
+			"ARDEV": 50,
+			"WEAROS": 51,
+			"MSGRVR": 52,
+			"BLUEW": 53,
+			"IPHONEWAMETATEST": 54,
+			"MSGRAR": 57,
+			"IPAD": 58,
+			"WAVOIP_CLI": 59,
+			"MSGRT": 60,
+			"IGDT": 61,
+			"ANDROIDWAMETATEST": 62,
+			"MSGRSG": 63,
+			"IGDSG": 64,
+			"INTEROP": 65,
+			"INTEROP_MSGR": 66,
+			"TEST": 9,
+			"UNKNOWN": 10
+		},
+		"channels": ["regular", "private"]
+	},
+	"psCountryCode": {
+		"name": "psCountryCode",
+		"id": 6833,
+		"type": "string",
+		"validator": "string",
+		"channels": ["private"]
+	},
+	"psId": {
+		"name": "psId",
+		"id": 6005,
+		"type": "string",
+		"validator": "string",
+		"channels": ["private"]
+	},
+	"serviceImprovementOptOut": {
+		"name": "serviceImprovementOptOut",
+		"id": 13293,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular", "private"]
+	},
+	"streamId": {
+		"name": "streamId",
+		"id": 3543,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"wametaLoggerTestFilter": {
+		"name": "wametaLoggerTestFilter",
+		"id": 15881,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular", "private"]
+	},
+	"webcBucket": {
+		"name": "webcBucket",
+		"id": 875,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcEnv": {
+		"name": "webcEnv",
+		"id": 633,
+		"type": {
+			"PROD": 0,
+			"INTERN": 1,
+			"DEV": 2,
+			"E2E": 3
+		},
+		"channels": ["regular"]
+	},
+	"webcNativeAutolaunch": {
+		"name": "webcNativeAutolaunch",
+		"id": 1009,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular"]
+	},
+	"webcNativeBetaUpdates": {
+		"name": "webcNativeBetaUpdates",
+		"id": 1007,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular"]
+	},
+	"webcPhoneAppVersion": {
+		"name": "webcPhoneAppVersion",
+		"id": 1005,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcPhoneCharging": {
+		"name": "webcPhoneCharging",
+		"id": 783,
+		"type": "boolean",
+		"validator": "boolean",
+		"channels": ["regular"]
+	},
+	"webcPhoneDeviceManufacturer": {
+		"name": "webcPhoneDeviceManufacturer",
+		"id": 829,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcPhoneDeviceModel": {
+		"name": "webcPhoneDeviceModel",
+		"id": 831,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcPhoneOsBuildNumber": {
+		"name": "webcPhoneOsBuildNumber",
+		"id": 833,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcPhoneOsVersion": {
+		"name": "webcPhoneOsVersion",
+		"id": 835,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcPhonePlatform": {
+		"name": "webcPhonePlatform",
+		"id": 707,
+		"type": {
+			"IPHONE": 1,
+			"ANDROID": 2,
+			"BB": 3,
+			"BBX": 7,
+			"S40": 4,
+			"SYMBIAN": 5,
+			"WP": 6,
+			"WEBCLIENT": 8,
+			"OSMETA": 11,
+			"ENT": 12,
+			"SMBA": 13,
+			"KAIOS": 14,
+			"SMBI": 15,
+			"WINDOWS": 16,
+			"WEB": 17,
+			"PORTAL": 18,
+			"BLOKS": 19,
+			"BLUEA": 20,
+			"BLUEI": 21,
+			"FBLITEA": 22,
+			"GREENA": 23,
+			"GREENI": 24,
+			"IGDA": 25,
+			"IGDI": 26,
+			"IGLITEA": 27,
+			"MLITEA": 28,
+			"MSGRA": 29,
+			"MSGRI": 30,
+			"MSGRP": 31,
+			"MSGRW": 32,
+			"IGDW": 33,
+			"PAGE": 34,
+			"MSGRDM": 35,
+			"MSGRDW": 36,
+			"MSGROM": 37,
+			"MSGROC": 38,
+			"MSGRM": 43,
+			"IGDM": 44,
+			"WEARM": 45,
+			"CAPI": 46,
+			"XR": 47,
+			"MACOS": 48,
+			"WAMETA_REPL": 49,
+			"ARDEV": 50,
+			"WEAROS": 51,
+			"MSGRVR": 52,
+			"BLUEW": 53,
+			"IPHONEWAMETATEST": 54,
+			"MSGRAR": 57,
+			"IPAD": 58,
+			"WAVOIP_CLI": 59,
+			"MSGRT": 60,
+			"IGDT": 61,
+			"ANDROIDWAMETATEST": 62,
+			"MSGRSG": 63,
+			"IGDSG": 64,
+			"INTEROP": 65,
+			"INTEROP_MSGR": 66,
+			"TEST": 9,
+			"UNKNOWN": 10
+		},
+		"channels": ["regular"]
+	},
+	"webcTabId": {
+		"name": "webcTabId",
+		"id": 3727,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcWebArch": {
+		"name": "webcWebArch",
+		"id": 6605,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcWebDeviceManufacturer": {
+		"name": "webcWebDeviceManufacturer",
+		"id": 6599,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcWebDeviceModel": {
+		"name": "webcWebDeviceModel",
+		"id": 6601,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcWebOsReleaseNumber": {
+		"name": "webcWebOsReleaseNumber",
+		"id": 6603,
+		"type": "string",
+		"validator": "string",
+		"channels": ["regular"]
+	},
+	"webcWebPlatform": {
+		"name": "webcWebPlatform",
+		"id": 899,
+		"type": {
+			"WEB": 1,
+			"WIN32": 2,
+			"DARWIN": 3,
+			"IOS_TABLET": 4,
+			"ANDROID_TABLET": 5,
+			"WINSTORE": 6,
+			"MACSTORE": 7,
+			"DARWIN_BETA": 8,
+			"WIN32_BETA": 9,
+			"PWA": 10
+		},
+		"channels": ["regular", "private"]
+	},
+	"yearClass": {
+		"name": "yearClass",
+		"id": 689,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"yearClass2016": {
+		"name": "yearClass2016",
+		"id": 2617,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"commitTime": {
+		"name": "commitTime",
+		"id": 47,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	},
+	"sequenceNumber": {
+		"name": "sequenceNumber",
+		"id": 3433,
+		"type": "integer",
+		"channels": ["regular", "private"]
+	}
+}

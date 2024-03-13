@@ -1,0 +1,12 @@
+{
+	"name": "wam-prototype",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"devDependencies": {
+		"@types/node": "^20.11.25",
+		"typescript": "^5.4.2"
+	}
+}
