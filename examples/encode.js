@@ -3,7 +3,7 @@
 check encoded_sample.payload in consts
  */
 
-import { encodeWAM, BinaryInfo } from "../wam/index.js";
+import { encodeWAM, BinaryInfo } from "../dist/wam/index.js";
 
 import file from "../file.json" assert { type: "json" };
 
