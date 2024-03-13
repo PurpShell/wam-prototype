@@ -7,7 +7,7 @@ import { decodeData, WAM_EVENTS, WAM_GLOBALS } from "../dist/wam/index.js";
 import { readFileSync, writeFileSync } from "fs";
 
 const test = false
-const buf = readFileSync(test ? "./test.payload" : "./consts/bigger_sample.payload")
+const buf = readFileSync(test ? "./test.payload" : "./initial.payload")
 const { header, data } = decodeData(buf);
 
 const events = []

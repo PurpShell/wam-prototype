@@ -1,8 +1,8 @@
-import eventsJson from "../consts/events.js";
-import globalJson from "../consts/global_attributes.js";
+import events from "../consts/events.js";
+import global from "../consts/global_attributes.js";
 
-export const WAM_EVENTS = eventsJson;
-export const WAM_GLOBALS = globalJson;
+export const WAM_EVENTS = events;
+export const WAM_GLOBALS = global;
 
 export const FLAG_BYTE = 8,
 	FLAG_GLOBAL = 0,
@@ -32,7 +32,9 @@ export type EventType = {
 		sequenceNumber: number;
 		props: {
 			// @ts-ignore
-			[k in keyof EventByName<key>["props"]]: TypeOfString<EventByName<key>["props"][k][1]>;
+			[k in keyof EventByName<key>["props"]]: TypeOfString<
+				EventByName<key>["props"][k][1]
+			>;
 		};
 	};
 } & {};
