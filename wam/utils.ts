@@ -26,13 +26,14 @@ type TypeOfString<A> = A extends "string"
 export type Event = ArrayElement<typeof WAM_EVENTS>;
 type EventByName<T extends Event["name"]> = Extract<Event, { name: T }>;
 
+export type GlobalType = Record<keyof typeof WAM_GLOBALS, any>;
+
 export type EventType = {
 	[key in Event["name"]]: {
-		commitTime: number;
-		sequenceNumber: number;
 		props: {
 			// @ts-ignore
 			[k in keyof EventByName<key>["props"]]: any;
 		};
+		globals: GlobalType;
 	};
 } & {};

@@ -9,6 +9,7 @@ import {
 	FLAG_GLOBAL,
 	WAM_EVENTS,
 	WAM_GLOBALS,
+	GlobalType,
 } from "./utils.js";
 
 const getHeaderBitLength = (key: number) => (key < 256 ? 2 : 3);
@@ -21,7 +22,6 @@ export const encodeWAM = (binaryInfo: BinaryInfo) => {
 	binaryInfo.buffer = [];
 
 	encodeWAMHeader(binaryInfo);
-	encodeGlobalAttributes(binaryInfo);
 	encodeEvents(binaryInfo);
 
 	console.log(binaryInfo.buffer);
@@ -53,16 +53,11 @@ function encodeWAMHeader(binaryInfo: BinaryInfo) {
 	binaryInfo.buffer.push(headerBuffer);
 }
 
-/**
- *
- * @param {BinaryInfo} binaryInfo
- */
-function encodeGlobalAttributes(binaryInfo: BinaryInfo) {
-	for (let [key, value] of Object.entries(binaryInfo.globalAttributes) as [
+function encodeGlobalAttributes(binaryInfo: BinaryInfo, globals: GlobalType) {
+	for (let [key, value] of Object.entries(globals) as [
 		keyof typeof WAM_GLOBALS,
 		any
 	][]) {
-		console.log(key, value);
 		const id = WAM_GLOBALS[key].id;
 		if (typeof value === "boolean") value = value ? 1 : 0;
 		binaryInfo.buffer.push(serializeData(id, value as Value, FLAG_GLOBAL));
@@ -76,20 +71,9 @@ function encodeGlobalAttributes(binaryInfo: BinaryInfo) {
 function encodeEvents(binaryInfo: BinaryInfo) {
 	for (const [
 		name,
-		{ props, commitTime, sequenceNumber },
+		{ props, globals },
 	] of binaryInfo.events.map((a) => Object.entries(a)[0])) {
-		commitTime &&
-			binaryInfo.buffer.push(
-				serializeData(WAM_GLOBALS["commitTime"].id, commitTime, FLAG_GLOBAL)
-			);
-		sequenceNumber &&
-			binaryInfo.buffer.push(
-				serializeData(
-					WAM_GLOBALS["sequenceNumber"].id,
-					sequenceNumber,
-					FLAG_GLOBAL
-				)
-			);
+		encodeGlobalAttributes(binaryInfo, globals)
 		const event = WAM_EVENTS.find((a) => a.name == name)!;
 
 		const props_ = Object.entries(props);
@@ -102,8 +86,10 @@ function encodeEvents(binaryInfo: BinaryInfo) {
 
 		binaryInfo.buffer.push(writeEvent(event.id, -event.weight, extended));
 
-		for (let [key, value] of props_) {
+		for (let i = 0; i < props_.length; i++) {
+			let [key, value] = props_[i]
 			const id = (event.props as any)[key][0];
+			extended = i < (props_.length - 1);
 			if (typeof value === "boolean") value = value ? 1 : 0;
 			binaryInfo.buffer.push(writeField(id, value as Value, extended));
 		}
@@ -161,8 +147,8 @@ function serializeData(key: number, value: Value, flag: number): Buffer {
 			return buffer;
 		} else {
 			buffer = Buffer.alloc(bufferLength + 8);
-			offset = serializeHeader(buffer, offset, key, flag | (6 << 4));
-			buffer.writeBigInt64LE(BigInt(value), offset);
+			offset = serializeHeader(buffer, offset, key, flag | (7 << 4));
+			buffer.writeDoubleLE(value, offset);
 			return buffer;
 		}
 	} else if (typeof value === "number") {
